@@ -80,6 +80,6 @@ resource "aws_instance" "pro_1" {
   vpc_security_group_ids      = [aws_security_group.pro_sg.id]
   associate_public_ip_address = true
   tags = {
-    name = "ansible"
+    name = "ubuntu"
   }
 }
