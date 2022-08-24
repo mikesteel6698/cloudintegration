@@ -3,4 +3,3 @@
 *.tfvars
 *.tfstate
 *.backup
-variables.tf
