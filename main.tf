@@ -8,7 +8,7 @@ resource "aws_vpc" "pro_vpc" {
 resource "aws_subnet" "subnet1" {
   vpc_id            = aws_vpc.pro_vpc.id
   cidr_block        = cidrsubnet("${var.vpc_cidr}", 8, 1)
-  availability_zone = var.availability_zone[0]
+  availability_zone = var.availability_zone
 
   tags = {
     Name = "pro_sub1"
