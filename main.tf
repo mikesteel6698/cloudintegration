@@ -71,7 +71,7 @@ resource "aws_security_group" "pro_sg" {
 resource "aws_instance" "pro_1" {
   ami               = var.ami_id
   instance_type     = var.instance_type
-  availability_zone = var.availability_zone[0]
+  availability_zone = var.availability_zone
   key_name          = var.key
   root_block_device {
     volume_size = var.root_volume_size
