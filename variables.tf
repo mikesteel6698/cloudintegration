@@ -2,7 +2,7 @@ variable "vpc_cidr" {
   type    = string
 }
 
-variable "test_az" {
+variable "availability_zone" {
   type    = string
 }
 
